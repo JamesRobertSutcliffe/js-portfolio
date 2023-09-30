@@ -1,0 +1,60 @@
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    color: var(--text-main);
+}
+
+body {
+    background-image: linear-gradient(to right, var(--gradient-color-4), var(--gradient-color-3), var(--gradient-color-2), var(--gradient-color-1));
+}
+
+
+/* Colour variables */
+
+:root {
+    --gradient-color-1: #ffffff;
+    --gradient-color-2: #f0f3fc;
+    --gradient-color-3: #f4f7ff;
+    --gradient-color-4: #ced9fc;
+    --text-main: rgb(22, 22, 22);
+    --text-blue: rgb(5, 69, 241);
+}
+
+.container {
+    width: 66%;
+    margin: auto;
+    text-align: center;
+}
+
+/* text / heading templates */
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.25;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--text-blue);
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 100;
+}
