@@ -20,12 +20,6 @@ body {
     --text-blue: rgb(5, 69, 241);
 }
 
-.container {
-    width: 66%;
-    margin: auto;
-    text-align: center;
-}
-
 /* text / heading templates */
 
 h1 {
@@ -36,19 +30,19 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    line-height: 1;
+    line-height: 0;
     font-weight: 700;
 }
 
 h3 {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 0rem;
     font-weight: 700;
 }
 
 h4 {
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 0.25rem;
     color: var(--text-blue);
     font-weight: 700;
 }
@@ -57,4 +51,60 @@ p {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 100;
+}
+
+/* Hero Section */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-container>div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+    height: 60%;
+    margin: auto;
+    gap: 3em;
+}
+
+.hero-item-l {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+}
+
+.hero-item-r {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+.hero-item-r>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.hero-item-r>div:nth-child(even) {
+    padding-left: 1.1rem;
+}
+
+.hero-item-r>div:nth-child(3) {
+    padding-left: 1.4rem;
 }
