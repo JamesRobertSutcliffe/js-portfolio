@@ -2,6 +2,7 @@
     font-family: "Poppins";
     box-sizing: border-box;
     color: var(--text-main);
+    text-shadow: 1px rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -35,9 +36,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 0rem;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 h4 {
@@ -76,14 +77,14 @@ p {
 }
 
 .hero-item-l {
-    width: 40%;
+    width: 37%;
     display: flex;
     flex-flow: column;
     align-items: end;
 }
 
 .hero-item-r {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-flow: column;
     text-align: left;
@@ -99,12 +100,77 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    align-items: center;
 }
 
 .hero-item-r>div:nth-child(even) {
-    padding-left: 1.1rem;
+    padding-left: 2.3rem;
 }
 
 .hero-item-r>div:nth-child(3) {
-    padding-left: 1.4rem;
+    padding-left: 4rem;
+}
+
+.hero-item-r>div>img {
+    height: 4rem;
+    margin: 1rem;
+}
+
+.hero-item-l>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chev-down {
+    opacity: 0.8;
+    height: 1.7rem;
+    margin: auto;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce-2;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce-2 {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+
+    25% {
+        transform: translateY(-0.5rem);
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 0.2;
+    }
+
+    75% {
+        transform: translateY(-0.5rem);
+
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+}
+
+.chev-container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.hero-item-l>div>a>p {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.2;
+    }
 }
