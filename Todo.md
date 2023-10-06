@@ -1,14 +1,18 @@
 1 - Personal Statement:
-    - Career switch intention, interests / hobbies, why I am a good candidate (passion for learning / toastmasters / Jiu Jitsu / Previous Career / Projects and Experience / Newsletter).
+   Top  - Career switch intention, 
+
+grid of 4:
+
+1 - Programming experience - freecodecamp / list frameworks used / Talk about projects (personal / client and commissioned (see in next section) / write about code / nesletter - Also shadowed at work
+2 - Previous career - video editor / how it relates to coding (working with clients / pixels / design etc) / enjoyed but want a fresh challenge and career
+3 - About me - Social - enjoy team activities / meetups (toastmasters / jiu jitsu ) - also enjoy learning (reading productivity books / learn the guitar / learn french? :|)
+4 - Education - Certified in Front End Development / Sociology Degree (wish I studied CS)
+
 2 - Experience and projects
     - Create a cool way to display projects showingcasing view laptop and mobile
-3 - Previous career
-    - Talk about my previous career as a video Editor
-4 - Education
-    - Degree in Sociology
-    - Certificate in Front End Web Development
-5 - Contact in footer
-    - link to this in navbar!
+
+5 - Contact section
+    - link to email / phone / github / codewars / CV?
 
 Navbar - Link to each section and substack
 
