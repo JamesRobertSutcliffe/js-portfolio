@@ -167,10 +167,86 @@ p {
 
 .hero-item-l>div>a>p {
     animation: blinker 2s linear infinite;
+
 }
 
 @keyframes blinker {
     50% {
         opacity: 0.2;
     }
+}
+
+/* Statement Section */
+
+.statement-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.statement-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+    height: 90%;
+    margin: auto;
+    gap: 3em;
+}
+
+.statement-top-container {
+    width: 65%;
+    margin: 0.5rem;
+}
+
+.statement-top-container>p {
+    text-align: justify;
+    font-weight: 600;
+}
+
+.statement-grid {
+    width: 90%;
+    height: 60%;
+    display: grid;
+    gap: 1.5rem;
+    align-content: space-around;
+    justify-content: space-between;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "top-left top-right"
+        "bottom-left bottom-right";
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top-left>p,
+.top-right>p,
+.bottom-left>p,
+.bottom-right>p {
+    font-size: 1rem;
+}
+
+.top-left>img,
+.top-right>img,
+.bottom-left>img,
+.bottom-right>img {
+    height: 4rem;
+    margin: 0.5rem;
+    display: block;
+}
+
+.statement-container>div>a>p {
+    animation: blinker 2s linear infinite;
 }
