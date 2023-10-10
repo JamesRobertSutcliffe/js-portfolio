@@ -81,6 +81,7 @@ p {
     display: flex;
     flex-flow: column;
     align-items: end;
+    margin-top: 5rem;
 }
 
 .hero-item-r {
@@ -193,7 +194,7 @@ p {
     align-items: center;
     justify-content: center;
     width: 66%;
-    height: 90%;
+    height: 100%;
     margin: auto;
     gap: 3em;
 }
@@ -209,7 +210,7 @@ p {
 }
 
 .statement-grid {
-    width: 90%;
+    width: 95%;
     height: 60%;
     display: grid;
     gap: 1.5rem;
@@ -236,6 +237,7 @@ p {
 .bottom-left>p,
 .bottom-right>p {
     font-size: 1rem;
+    text-align: justify;
 }
 
 .top-left>img,
@@ -249,4 +251,16 @@ p {
 
 .statement-container>div>a>p {
     animation: blinker 2s linear infinite;
+}
+
+.bottom-left>p>a:hover,
+.bottom-right>p>a:hover {
+    opacity: 0.2;
+    transition: 1s;
+}
+
+.bottom-left>p>a,
+.bottom-right>p>a {
+    opacity: 1;
+    transition: 1s;
 }
