@@ -9,7 +9,7 @@ grid of 4:
 4 - Education - Certified in Front End Development / Sociology Degree (wish I studied CS)
 
 2 - Experience and projects
-    - Create a cool way to display projects showingcasing view laptop and mobile
+    - Possible have title similar format to card?
 
 5 - Contact section
     - link to email / phone / github / codewars / CV?
