@@ -264,3 +264,125 @@ p {
     opacity: 1;
     transition: 1s;
 }
+
+/* Projects Section */
+
+/* formatting */
+
+.projects-container>div {
+    height: 1500px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 10px
+}
+
+
+/* Cards */
+.projects-container>div>div {
+    width: 50%;
+    height: 454px;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0%;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.project-item>div {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    padding: 2%;
+    opacity: 0;
+    position: relative;
+    top: 10px;
+    transition: 0.3s;
+}
+
+
+/* Card animation */
+.project-item:hover>div {
+    opacity: 1;
+    position: relative;
+    top: 0px;
+}
+
+/* Card Elements */
+.project-item>div>p {
+    margin: 0.2rem 0.5rem 1rem 1rem;
+    padding: 2px;
+    font-size: 1rem;
+    color: var(--gradient-color-2);
+}
+
+h5 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0.5rem 0.1rem 1rem;
+    margin-bottom: 0.1rem;
+    color: var(--gradient-color-2);
+    font-weight: 700;
+    padding: 2px;
+}
+
+.languages {
+    margin-left: 1rem;
+}
+
+h6 {
+    display: inline;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.2rem;
+    font-size: 0.7rem;
+    background-color: var(--text-blue);
+    border-radius: 12.5%;
+    color: var(--gradient-color-3);
+}
+
+.project-item-space {
+    min-height: 2rem;
+}
+
+.project-item-space-2 {
+    min-height: 8rem;
+}
+
+
+/* Individual Project Classes */
+
+.project-1 {
+    background-image: url("../images/music-app.png");
+}
+
+.project-2 {
+    background-image: url("../images/music-app.png");
+}
+
+.project-3 {
+    background-image: url("../images/music-app.png");
+    height: 300px !important;
+}
+
+.project-4 {
+    background-image: url("../images/music-app.png");
+    height: 300px !important;
+}
+
+.project-5 {
+    background-image: url("../images/music-app.png");
+}
+
+.project-6 {
+    background-image: url("../images/music-app.png");
+
+}
