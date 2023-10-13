@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 0;
     font-weight: 700;
 }
@@ -81,7 +81,7 @@ p {
     display: flex;
     flex-flow: column;
     align-items: end;
-    margin-top: 5rem;
+    margin-top: 3.2rem;
 }
 
 .hero-item-r {
@@ -105,11 +105,11 @@ p {
 }
 
 .hero-item-r>div:nth-child(even) {
-    padding-left: 2.3rem;
+    padding-left: 2.2rem;
 }
 
 .hero-item-r>div:nth-child(3) {
-    padding-left: 4rem;
+    padding-left: 3.5rem;
 }
 
 .hero-item-r>div>img {
@@ -269,13 +269,21 @@ p {
 
 /* formatting */
 
+.projects-container>p {
+    width: 43%;
+    margin: 6rem auto 2rem auto;
+    text-align: justify;
+    font-weight: 600;
+}
+
 .projects-container>div {
-    height: 1500px;
-    width: 45%;
+    height: 1300px;
+    width: 43%;
     margin: auto;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     gap: 10px
 }
 
