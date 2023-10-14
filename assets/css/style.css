@@ -394,3 +394,153 @@ h6 {
     background-image: url("../images/music-app.png");
 
 }
+
+/* Modals */
+
+.modal {
+    width: 28%;
+    min-height: 100vh;
+    border: 0;
+    margin-right: 0%;
+    animation-name: shiftModal;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    overflow: scroll;
+    background-color: var(--gradient-color-2);
+    border-left: none;
+}
+
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+@keyframes shiftModal {
+    0% {
+        right: -28%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+.modal-top-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    margin-top: 0rem;
+    border-bottom: solid 2px rgba(5, 68, 241, 0.544);
+    ;
+
+}
+
+.modal-top-div>img {
+    height: 2rem;
+    animation: blinker 2s linear infinite;
+}
+
+.modal-top-div>img:hover {
+    cursor: pointer;
+}
+
+.modal-top-div>p {
+    height: 2rem;
+    font-weight: 600;
+    color: var(--text-blue);
+    transition: 0.5s;
+    text-align: justify;
+    margin: 0.75rem;
+    font-size: 1rem;
+}
+
+.modal-top-div>p:hover {
+    cursor: pointer;
+    opacity: 0.2;
+    animation: none;
+}
+
+.modal>h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.2rem;
+    margin: 1.2rem 0.1rem 0.1rem 0.1rem;
+}
+
+.modal>P {
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+
+.modal>img {
+    width: 100%;
+    border-radius: 7.5%;
+    padding: 0.2rem;
+    margin: 1.2rem 0.1rem 0.1rem 0.1rem;
+}
+
+.modal>h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.2rem;
+    margin: 1.2rem 0.1rem 0.7rem 0.1rem;
+}
+
+.modal-mid-div {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.modal-mid-div>h2 {
+    display: inline;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    background-color: var(--text-blue);
+    border-radius: 12.5%;
+    color: var(--gradient-color-3);
+}
+
+.modal-bottom-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+
+.modal-bottom-div>img {
+    height: 1.5rem;
+    display: inline;
+}
+
+.modal-bottom-div>h2 {
+    display: inline;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.2rem;
+    margin: 1.2rem 0.1rem 0.7rem 0.1rem;
+}
+
+.modal>a {
+    text-decoration: none;
+}
+
+.modal>a>p {
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    color: var(--text-blue);
+    text-decoration: none;
+}
+
+.modal>a>p:hover {
+    text-decoration: underline
+}
