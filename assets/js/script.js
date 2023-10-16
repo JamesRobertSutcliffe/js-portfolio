@@ -12,3 +12,18 @@ modal1Close.forEach((m) => {
         modal1.close();
     })
 })
+
+const openModal4 = document.querySelector(".project-4")
+const modal4 = document.querySelector(".modal4")
+const modal4Close = document.querySelectorAll(".modal4-close")
+
+openModal4.addEventListener("click", () => {
+    console.log("hello smello bjj")
+    modal4.showModal();
+})
+
+modal4Close.forEach((m) => {
+    m.addEventListener('click', () => {
+        modal4.close();
+    })
+})
