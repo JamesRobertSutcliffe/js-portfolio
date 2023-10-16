@@ -369,11 +369,12 @@ h6 {
 /* Individual Project Classes */
 
 .project-1 {
-    background-image: url("../images/music-app.png");
+    background-image: url("../images/music.png");
+    background-repeat: no-repeat;
 }
 
 .project-2 {
-    background-image: url("../images/music-app.png");
+    background-image: url("../images/chevron-left.svg");
 }
 
 .project-3 {
@@ -382,8 +383,9 @@ h6 {
 }
 
 .project-4 {
-    background-image: url("../images/music-app.png");
+    background-image: url("../images/sarah.gif");
     height: 300px !important;
+    background-repeat: no-repeat;
 }
 
 .project-5 {
