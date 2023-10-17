@@ -1,8 +1,5 @@
 ToDo - 
 
-2 - Experience and projects
-    - add modals from ref site
-    - Import gifs / info on projects
 
 5 - Contact section
     - link to email / phone / github / codewars / CV?

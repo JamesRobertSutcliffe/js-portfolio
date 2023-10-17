@@ -318,6 +318,10 @@ p {
     transition: 0.3s;
 }
 
+.project-item:hover {
+    cursor: pointer;
+}
+
 
 /* Card animation */
 .project-item:hover>div {
@@ -369,33 +373,50 @@ h6 {
 /* Individual Project Classes */
 
 .project-1 {
-    background-image: url("../images/music.png");
+    background-image: url("../images/music.gif");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .project-2 {
-    background-image: url("../images/chevron-left.svg");
+    background-image: url("../images/sarah.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .project-3 {
-    background-image: url("../images/music-app.png");
+    background-image: url("../images/wordle.gif");
     height: 300px !important;
-}
-
-.project-4 {
-    background-image: url("../images/sarah.gif");
-    height: 300px !important;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
+.project-4 {
+    background-image: url("../images/panagram.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px !important;
+}
+
 .project-5 {
-    background-image: url("../images/music-app.png");
+    background-image: url("../images/movie.gif");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 37rem;
 }
 
 .project-6 {
-    background-image: url("../images/music-app.png");
+    background-image: url("../images/FC_APP.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
+
 
 /* Modals */
 
