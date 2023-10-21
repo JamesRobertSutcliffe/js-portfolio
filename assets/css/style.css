@@ -43,7 +43,6 @@ h3 {
 
 h4 {
     font-size: 1.25rem;
-    line-height: 0.25rem;
     color: var(--text-blue);
     font-weight: 700;
 }
@@ -909,7 +908,7 @@ h6 {
 @media (min-width: 0px) and (max-width: 479px) {
 
     * {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     /* HERO */
@@ -917,6 +916,10 @@ h6 {
     .shimmer,
     .chev-container {
         display: none;
+    }
+
+    .hero-container {
+        min-height: 60vh;
     }
 
     .hero-item-r>div:nth-child(even) {
@@ -942,6 +945,10 @@ h6 {
         margin: 3rem auto 0rem auto;
     }
 
+    .statement-container>div {
+        width: 90%;
+    }
+
     .statement-top-container>p {
         text-align: center;
         font-weight: 600;
@@ -949,7 +956,7 @@ h6 {
 
 
     .statement-grid {
-        width: 95%;
+        width: 100%;
         height: 60%;
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;
@@ -979,13 +986,14 @@ h6 {
     /* Projects */
 
     .projects-container>p {
-        width: 63%;
-        margin: 2rem auto 2rem auto;
+        width: 88%;
+        margin: 0rem auto 3rem auto;
+        text-align: center;
     }
 
     .projects-container>div {
         min-height: 2800px;
-        width: 63%;
+        width: 88%;
     }
 
     .projects-container>div>div {
@@ -1024,11 +1032,12 @@ h6 {
     /* Contact */
 
     .contact-container>p {
-        width: 63%;
+        width: 88%;
+        text-align: center;
     }
 
     .contact-container>div {
-        width: 63%;
+        width: 88%;
     }
 
     .contact-container>div>div>a>img {
