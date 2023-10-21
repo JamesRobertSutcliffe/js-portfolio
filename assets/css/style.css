@@ -54,6 +54,7 @@ p {
     font-weight: 100;
 }
 
+
 /* NavBar */
 
 nav {
@@ -91,7 +92,7 @@ nav>div>a:hover {
     align-items: center;
     flex-flow: row wrap;
     justify-content: center;
-    height: 87.5vh;
+    min-height: 87.5vh;
     width: 100%;
 }
 
@@ -100,14 +101,14 @@ nav>div>a:hover {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 66%;
+    min-width: 66%;
     height: 60%;
     margin: auto;
     gap: 3em;
 }
 
 .hero-item-l {
-    width: 37%;
+    min-width: 37%;
     display: flex;
     flex-flow: column;
     align-items: end;
@@ -115,7 +116,7 @@ nav>div>a:hover {
 }
 
 .hero-item-r {
-    width: 45%;
+    min-width: 45%;
     display: flex;
     flex-flow: column;
     text-align: left;
@@ -143,7 +144,7 @@ nav>div>a:hover {
 }
 
 .hero-item-r>div>img {
-    height: 4rem;
+    max-height: 4rem;
     margin: 1rem;
 }
 
@@ -214,7 +215,7 @@ nav>div>a:hover {
     align-items: center;
     flex-flow: row wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -268,6 +269,7 @@ nav>div>a:hover {
 .bottom-right>p {
     font-size: 1rem;
     text-align: justify;
+    margin: auto;
 }
 
 .top-left>img,
@@ -380,6 +382,9 @@ h5 {
 
 .languages {
     margin-left: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
 }
 
 h6 {
@@ -437,7 +442,7 @@ h6 {
     background-image: url("../images/media_next.gif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border: solid 0.05rem rgba(0, 0, 0, 0.19) !important
 }
 
@@ -474,7 +479,7 @@ h6 {
 }
 
 .contact-container>div>div>a>img {
-    height: 6rem;
+    max-height: 6rem;
     margin: auto;
     transition: 0.5s;
 }
@@ -595,11 +600,13 @@ h6 {
     margin: 0.1rem;
     margin-top: 1rem;
     margin-bottom: 0.7rem;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .modal-mid-div>h2 {
     display: inline;
-    padding: 0.25rem 1rem 0.25rem 1rem;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
     margin: 0.2rem;
     font-size: 0.8rem;
     background-color: var(--text-blue);
@@ -643,4 +650,397 @@ h6 {
 
 .modal>a>p:hover {
     text-decoration: underline
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* HERO */
+
+    .shimmer,
+    .chev-container {
+        display: none;
+    }
+
+    .hero-item-r>div:nth-child(even) {
+        padding-left: 0.5rem;
+    }
+
+    .hero-item-r>div:nth-child(3) {
+        padding-left: 0.5rem;
+    }
+
+    .hero-item-l {
+        text-align: center;
+    }
+
+    .hero-item-r {
+        text-align: center;
+    }
+
+    /* Statement */
+
+    .statement-top-container {
+        width: 95%;
+        margin: 3rem auto 0rem auto;
+    }
+
+
+    .statement-grid {
+        width: 95%;
+        height: 60%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+            "top-left"
+            "top-right"
+            "bottom-left"
+            "bottom-right";
+    }
+
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right {
+        align-items: center;
+    }
+
+    /* Projects */
+
+    .projects-container>p {
+        width: 63%;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .projects-container>div {
+        min-height: 2800px;
+        width: 63%;
+    }
+
+    .projects-container>div>div {
+        width: 80%;
+    }
+
+    .project-3 {
+        background-size: cover;
+        min-height: 464px;
+    }
+
+    .project-4 {
+        background-size: cover;
+        min-height: 464px;
+    }
+
+    .project-5 {
+        background-size: cover;
+    }
+
+    .project-6 {
+        background-size: cover;
+    }
+
+    .project-item>div {
+        opacity: 1;
+        top: 4px;
+    }
+
+    /* MODAL */
+
+    .modal {
+        width: 60%;
+    }
+
+    /* Contact */
+
+    .contact-container>p {
+        width: 63%;
+    }
+
+    .contact-container>div {
+        width: 63%;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 63%;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* HERO */
+
+    .shimmer,
+    .chev-container {
+        display: none;
+    }
+
+    .hero-item-r>div:nth-child(even) {
+        padding-left: 0.5rem;
+    }
+
+    .hero-item-r>div:nth-child(3) {
+        padding-left: 0.5rem;
+    }
+
+    .hero-item-l {
+        text-align: center;
+    }
+
+    .hero-item-r {
+        text-align: center;
+    }
+
+    /* Statement */
+
+    .statement-top-container {
+        width: 95%;
+        margin: 3rem auto 0rem auto;
+    }
+
+    .statement-top-container>p {
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+    .statement-grid {
+        width: 95%;
+        height: 60%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+            "top-left"
+            "top-right"
+            "bottom-left"
+            "bottom-right";
+    }
+
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right {
+        align-items: center;
+    }
+
+    .top-left>p,
+    .top-right>p,
+    .bottom-left>p,
+    .bottom-right>p {
+        text-align: center;
+    }
+
+
+
+    /* Projects */
+
+    .projects-container>p {
+        width: 63%;
+        margin: 2rem auto 2rem auto;
+        text-align: center;
+    }
+
+    .projects-container>div {
+        min-height: 2800px;
+        width: 63%;
+    }
+
+    .projects-container>div>div {
+        width: 100%;
+    }
+
+    .project-3 {
+        background-size: cover;
+        min-height: 464px;
+    }
+
+    .project-4 {
+        background-size: cover;
+        min-height: 464px;
+    }
+
+    .project-5 {
+        background-size: cover;
+    }
+
+    .project-6 {
+        background-size: cover;
+    }
+
+    .project-item>div {
+        opacity: 1;
+        top: 4px;
+    }
+
+    /* MODAL */
+
+    .modal {
+        width: 80%;
+    }
+
+    /* Contact */
+
+    .contact-container>p {
+        width: 63%;
+        text-align: center;
+    }
+
+    .contact-container>div {
+        width: 63%;
+    }
+
+    .contact-container>div>div>a>img {
+        max-height: 3rem;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 63%;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+
+    * {
+        font-size: 11px;
+    }
+
+    /* HERO */
+
+    .shimmer,
+    .chev-container {
+        display: none;
+    }
+
+    .hero-item-r>div:nth-child(even) {
+        padding-left: 0.5rem;
+    }
+
+    .hero-item-r>div:nth-child(3) {
+        padding-left: 0.5rem;
+    }
+
+    .hero-item-l {
+        text-align: center;
+    }
+
+    .hero-item-r {
+        text-align: center;
+    }
+
+    /* Statement */
+
+    .statement-top-container {
+        width: 95%;
+        margin: 3rem auto 0rem auto;
+    }
+
+    .statement-top-container>p {
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+    .statement-grid {
+        width: 95%;
+        height: 60%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+            "top-left"
+            "top-right"
+            "bottom-left"
+            "bottom-right";
+    }
+
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right {
+        align-items: center;
+    }
+
+    .top-left>p,
+    .top-right>p,
+    .bottom-left>p,
+    .bottom-right>p {
+        text-align: center;
+    }
+
+
+
+    /* Projects */
+
+    .projects-container>p {
+        width: 63%;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .projects-container>div {
+        min-height: 2800px;
+        width: 63%;
+    }
+
+    .projects-container>div>div {
+        width: 100%;
+    }
+
+    .project-3 {
+        background-size: cover;
+        min-height: 464px;
+    }
+
+    .project-4 {
+        background-size: cover;
+        min-height: 464px;
+    }
+
+    .project-5 {
+        background-size: cover;
+    }
+
+    .project-6 {
+        background-size: cover;
+    }
+
+    .project-item>div {
+        opacity: 1;
+        top: 4px;
+    }
+
+    /* MODAL */
+
+    .modal {
+        width: 80%;
+    }
+
+    /* Contact */
+
+    .contact-container>p {
+        width: 63%;
+    }
+
+    .contact-container>div {
+        width: 63%;
+    }
+
+    .contact-container>div>div>a>img {
+        max-height: 3rem;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 63%;
+    }
+
 }
