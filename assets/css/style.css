@@ -440,7 +440,7 @@ h6 {
 }
 
 .project-3 {
-    background-image: url("../images/wordle.gif");
+    background-image: url("../images/cockney.gif");
     height: 300px !important;
     background-size: cover;
     background-position: center;
@@ -464,10 +464,10 @@ h6 {
 }
 
 .project-6 {
-    background-image: url("../images/movie.gif");
+    background-image: url("../images/markbot.gif");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 37rem;
+    background-size: cover;
 }
 
 
